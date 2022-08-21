@@ -4,12 +4,16 @@
   "description": "a web3 event platform",
   "main": "index.js",
   "scripts": {
-    "test": "node test/RSVP.ts"
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.ts --network rinkeby"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "hardhat": "^2.10.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
   }
 }
